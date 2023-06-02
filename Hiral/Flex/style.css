@@ -1,0 +1,37 @@
+h1 {
+  color: orange;
+}
+
+.card div img {
+  width: 200px;
+  height: 200px;
+}
+
+.cardWrapper1 h2 {
+  width: fit-content;
+  margin: auto;
+}
+
+.cardWrapper1,
+.cardWrapper2,
+.cardWrapper3 {
+  background-color: red;
+}
+
+.card1,
+.card2,
+.card3 {
+  display: flex;
+}
+
+.card1 {
+  justify-content: space-between;
+}
+
+.card2 {
+  justify-content: space-around;
+}
+
+.card3 {
+  justify-content: space-evenly;
+}
