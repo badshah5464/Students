@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* * {
+        margin: 0;
+        padding: 0;
+      } */
+
+      li {
+        list-style: square;
+      }
+
+      li > ul > li {
+        list-style: circle;
+        /* list-style: none; */
+        /* list-style: disc; */
+      }
+
+      .perent {
+        background-color: yellow;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .chaild-1 {
+        background-color: green;
+        height: 200px;
+        width: 200px;
+      }
+
+      .chaild-2 {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+      }
+
+      .insideList > li {
+        border: 3px solid blue;
+        margin: 10px 0;
+        padding: 10px 0;
+        list-style: inside;
+      }
+
+      .outsideList > li {
+        border: 3px solid blue;
+        margin: 10px 0;
+        padding: 10px 0;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Unordered List</h1>
+
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+
+    <hr />
+
+    <!--  -->
+    <h2>Nested unordered list</h2>
+
+    <ul>
+      <li>
+        Coffee
+        <ul>
+          <li>Dark Coffee</li>
+        </ul>
+      </li>
+
+      <li>
+        Bornvitta
+        <ul>
+          <li>Milk Bornvitta</li>
+          <li>Chocolate Bornvitta</li>
+        </ul>
+      </li>
+      <li>Tea</li>
+      <li>Butter milk</li>
+
+      <li>
+        Lassi
+        <ul>
+          <li>Mango lassi</li>
+          <li>Chocolate Lassi</li>
+          <li>Badam lassi</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr />
+
+    <!-- default -->
+    <h2>List style default</h2>
+    <ul class="outsideList">
+      <li>Home</li>
+      <li>About</li>
+      <li>Service</li>
+    </ul>
+
+    <!-- Change -->
+    <h2>List style inside</h2>
+    <ul class="insideList">
+      <li>Home</li>
+      <li>About</li>
+      <li>Service</li>
+    </ul>
+
+    <hr />
+
+    <div class="perent">
+      <div class="chaild-1"></div>
+      <div class="chaild-2"></div>
+    </div>
+
+  </body>
+</html>

@@ -22,30 +22,42 @@
       .firstTabel tr > td:nth-child(2) {
         text-align: center;
       }
+
+      .firstTabel tr:nth-child(3) > :first-child {
+        background-color: red;
+      }
     </style>
   </head>
   <body>
     <table class="firstTabel">
+      <colgroup>
+        <col span="1" />
+        <col span="1" style="visibility: hidden" />
+      </colgroup>
       <tr>
         <th>Magan</th>
         <td>Math</td>
+        <td>47</td>
         <td>47</td>
       </tr>
       <tr>
         <th>Chagan</th>
         <td>Math</td>
         <td>47</td>
+        <td>47</td>
       </tr>
       <tr>
         <th>Chippu</th>
         <td>Math</td>
+        <td>47</td>
         <td>47</td>
       </tr>
       <tr>
         <th>Chiku</th>
         <td>Math</td>
         <td>47</td>
-      </tr>      
+        <td>47</td>
+      </tr>
     </table>
   </body>
 </html>
