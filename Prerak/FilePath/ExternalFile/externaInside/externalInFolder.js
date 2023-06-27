@@ -1,0 +1,1 @@
+document.getElementById("paregraph").style.backgroundColor = "red"

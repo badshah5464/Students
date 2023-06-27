@@ -5,22 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .hw {
-        height: 50vh;
-      }
-
       header {
         background: url("./digital-painting-mountain-with-colorful-tree-foreground_1340-25699.avif");
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-color: brown;        
+        height: 50vh;
+      }
+
+      .googleImg {
+        background: url("https://images.freeimages.com/images/previews/ac9/railway-hdr-1361893.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 40vh;
+      }
+
+      .writeImg {
+        position: relative;
+        width: fit-content;
+        color: white;
+      }
+
+      .writeImg > p {
+        position: absolute;
+        bottom: 50%;
+        top: 50%;
+        text-align: center;
+
       }
     </style>
   </head>
   <body>
     <div style="height: 100vh"></div>
-    <header class="hw"></header>
+
+    <header></header>
+
     <div style="height: 100vh"></div>
+
+    <div class="googleImg"></div>
+
+    <div style="height: 100vh"></div>
+
+    <!-- Text write in image -->
+    <div class="writeImg">
+      <img
+        src="./purple-blue-wallpaper-with-colorful-swirl_1340-27545.avif"
+        alt="lol" width="500px"/>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo
+        sequi obcaecati eius quo sapiente tempora nobis nihil impedit dolores
+        saepe blanditiis beatae, soluta dolorem itaque architecto accusamus
+        ipsa, ab distinctio!
+      </p>
+    </div>
+
+    <h1 style="position: absolute; bottom: 0; right: 0">lorem</h1>
   </body>
 </html>

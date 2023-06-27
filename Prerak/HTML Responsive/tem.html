@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    section {
+      display: flex;
+      /* justify-content: space-between; */
+      /* justify-content: space-around; */
+      /* justify-content: space-evenly; */
+    }
+
+    .div-1 {
+      background-color: greenyellow;
+      width: 33.33%;
+      padding: 50px;
+    }
+
+    .div-2 {
+      background-color: lightblue;
+      width: 33.33%;
+      padding: 50px;
+    }
+
+    .div-3 {
+      background-color: pink;
+      width: 33.33%;
+      padding: 50px;
+    }
+
+    @media screen and (max-width:750px) {
+      section {
+        flex-direction: column;
+      }
+
+      .div-1,
+      .div-2,
+      .div-3 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="div-1">div 1</div>
+    <div class="div-2">div 2</div>
+    <div class="div-3">div 3</div>
+  </section>
+
+  <h1> &lt;h1&gt; Hello World &lt;/h1&gt;</h1>
+</body>
+
+</html>
