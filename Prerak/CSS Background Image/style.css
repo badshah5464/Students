@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bgImgParent {
+  background: url('./img_girl.jpg');
+  height: 70vh;
+  background-color: red;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.textBg {
+  color: blue;
+  background: url('./BgImg.jpg');
+}
+
+hr {
+  margin: 50px 0;
+}
+
+.fixedImg {
+  background: url('./BgImg.jpg');
+  height: 100vh;
+  width: 80vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  overflow: auto;
+}
+
+.scrollImg {
+  background: url('./BgImg.jpg') fixed;
+  height: 30vh;
+  background-size: cover;
+  /* background-attachment: fixed; */
+}

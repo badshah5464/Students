@@ -1,227 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-  <body>
-    <!-- Position relative & absolute  -->
+  <style>
+    hr {
+      border: 2px solid;
+      margin: 30px 0;
+    }
 
-    <h1>Position relative & absolute :</h1>
+    .relAb {
+      position: relative;
+      background-color: burlywood;
+      height: 500px;
+      width: 500px;
+      border: 3px solid;
+      margin: auto;
+    }
 
-    <div class="relative">
-      <div class="absolute">
-        <img src="./img.jpg" alt="Image" />
-      </div>
-    </div>
+    .relAbChild {
+      position: absolute;
+      height: 100px;
+      width: 100px;
+      margin: 5px;
+      background-color: red;
+      bottom: 300px;
+      right: 100px;
+    }
+  </style>
 
-    <hr />
-    <!-- Position sticky -->
+</head>
 
-    <h1>Position Sticky :</h1>
+<body style="height: 500vh">
 
-    <div class="containt">
-      <p>
-        In this example, the sticky element sticks to the top of the page (top:
-        0), when you reach its scroll position.
-      </p>
+  <!-- Relative & Absolute -->
+  <section class="relAb">
+    <div class="relAbChild"></div>
+  </section>
 
-      <div class="sticky">
-        <p>I'm Sticky</p>
-      </div>
+  <hr>
 
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        In this example, the sticky element sticks to the top of the page (top:
-        0), when you reach its scroll position.
-      </p>
-      <p>
-        Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum
-        definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-        quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert
-        laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no
-        molestiae voluptatibus.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        delectus deleniti accusamus accusantium, unde error? Nisi minima, id
-        asperiores vero error rem tempore aperiam odio quidem eveniet obcaecati
-        quae temporibus!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint
-        perspiciatis eum alias quibusdam expedita, dicta suscipit ullam cum
-        magni nobis? Tempore asperiores neque quidem omnis! Debitis eaque non
-        dignissimos itaque.
-      </p>
-      <p>
-        Inventore fugit nihil explicabo porro officia voluptatibus ad
-        consectetur obcaecati odit quis maiores minus vel eaque mollitia aperiam
-        nesciunt sit cupiditate, dolorum quisquam praesentium neque
-        perspiciatis, nobis vero pariatur. Reiciendis.
-      </p>
-      <p>
-        Ex quae quisquam, omnis fugiat quo, eius consequuntur ratione minus eum
-        soluta facere molestias. Quos, itaque delectus. Fugiat dolore sequi
-        expedita, iusto suscipit pariatur nam amet assumenda aspernatur error
-        facilis!
-      </p>
-      <p>
-        Fugit ex modi molestias a dolorem, necessitatibus magni accusantium
-        neque et deleniti iusto autem eius aliquam adipisci earum pariatur harum
-        magnam numquam! Numquam non incidunt, ab laudantium impedit molestias
-        nobis.
-      </p>
-      <p>
-        Quibusdam pariatur ut laudantium nihil incidunt modi ullam, cum eius
-        illum minima nulla placeat. Fugiat aliquid alias, veritatis, iusto sit
-        inventore architecto eaque aut voluptates laborum eveniet perferendis
-        iure facere.
-      </p>
-    </div>
+</body>
 
-    <hr />
-    <!-- Position fixed -->
-    <h1>Position fixed :</h1>
-
-    <div class="parent">
-      <div class="navigation">
-        <h3>Componey Name</h3>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Service</li>
-        </ul>
-      </div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aliquid
-        iste magni est blanditiis quo eum. Quo inventore expedita sed corrupti
-        amet, quibusdam, earum veritatis reiciendis temporibus itaque illo est.
-      </p>
-      <p>
-        Hic blanditiis a, earum nam quas ab neque, possimus totam exercitationem
-        dignissimos necessitatibus dolorem aliquam nihil libero obcaecati id
-        nemo iusto. Provident dolorem assumenda expedita, id natus eum rerum
-        molestias!
-      </p>
-      <p>
-        Veritatis facilis eaque atque earum, expedita ullam! Atque cupiditate
-        tempore deserunt suscipit. Voluptas commodi architecto odit debitis
-        recusandae provident? Similique laborum iure quaerat possimus,
-        asperiores ex repellat officia quibusdam ad.
-      </p>
-      <p>
-        Eos facilis at adipisci ad eaque dicta vitae rerum et commodi
-        voluptatem. Est inventore nisi explicabo, facere rerum tempora provident
-        impedit in ex, delectus accusamus sapiente odio soluta eius
-        reprehenderit.
-      </p>
-      <p>
-        Iusto voluptates cum deleniti quidem delectus asperiores mollitia
-        excepturi omnis officiis molestias soluta, autem qui eligendi esse
-        atque. Consequuntur, optio error quisquam voluptas incidunt dolores
-        adipisci sed nisi odio cum!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-        perspiciatis nulla alias veniam nobis natus quo? Nisi, qui modi error
-        ducimus at, amet, recusandae earum repellat voluptates voluptate
-        doloremque consequuntur!
-      </p>
-      <p>
-        Minima ad sed maiores dolores repellendus temporibus, dolorum eveniet
-        facere sequi tempora quidem error, quis sit laboriosam magnam accusamus.
-        Reprehenderit iusto dolores velit similique quo iste, minus dolore non
-        ipsa.
-      </p>
-      <p>
-        Quae, pariatur quos a tempore ducimus, ea optio culpa iure laborum quas
-        rerum, nisi explicabo quisquam molestiae autem! Fugit aliquam libero
-        blanditiis tenetur id, ipsam suscipit eligendi? Minus, sapiente maxime?
-      </p>
-      <p>
-        Laborum iste repellat sapiente itaque, eius eaque voluptas enim tenetur
-        tempore laudantium expedita labore molestiae dignissimos nam dolore illo
-        cupiditate sit doloremque ducimus sunt recusandae vero optio! Aliquam,
-        quae nam.
-      </p>
-      <p>
-        Ea doloremque quae facilis nemo! Odit animi pariatur, dicta
-        necessitatibus adipisci dolorem dolore? Adipisci nulla temporibus error
-        quisquam nesciunt tempore ea consequuntur quasi, voluptas fugiat
-        officiis illo rem facere facilis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil tempora
-        minus inventore non mollitia fuga veniam incidunt. Ducimus cupiditate
-        nihil quo amet ratione quidem, distinctio dolor aliquid, animi fuga
-        saepe.
-      </p>
-      <p>
-        Quos libero perspiciatis facere, officiis accusamus inventore! Hic sequi
-        explicabo delectus dolor dolore eum similique veniam expedita distinctio
-        unde voluptatem dicta consequatur quidem libero, quam maxime perferendis
-        excepturi facere! Iste?
-      </p>
-      <p>
-        Consectetur architecto, suscipit sed a ea fuga sunt atque labore quo,
-        ratione est repellat explicabo nobis voluptate harum? Illum ratione quis
-        rem qui praesentium commodi nobis voluptatibus explicabo neque
-        laudantium!
-      </p>
-      <p>
-        Soluta mollitia id ratione natus magni quis. Voluptates non error unde
-        ab numquam ipsa consequatur et sed, libero nesciunt nemo eligendi
-        aliquam dolorem impedit obcaecati pariatur esse voluptas blanditiis
-        repellendus?
-      </p>
-      <p>
-        Voluptatibus rerum esse quia optio error libero velit commodi non
-        expedita, perspiciatis autem eligendi, quo modi. Dicta repellat
-        assumenda quos vel quis ipsam distinctio optio perferendis labore?
-        Sapiente, iure nemo?
-      </p>
-      <p>
-        Suscipit assumenda repellendus ab est explicabo, dolores ducimus, fugit
-        accusantium qui maxime, voluptas nemo nulla deleniti perferendis.
-        Officiis sequi dolores magnam ut quisquam, rem nostrum illum asperiores
-        facilis accusamus quidem!
-      </p>
-      <p>
-        Animi vero, et voluptate dicta ex quas quaerat unde in libero aspernatur
-        praesentium quam corporis. Voluptates sapiente laborum illum voluptas
-        ipsa asperiores, atque eligendi quidem architecto qui amet, sint
-        dolores!
-      </p>
-      <p>
-        Architecto vel a beatae repellendus culpa, error dolorem cumque quis
-        quae doloribus. Aut nostrum repellat, explicabo nulla iure molestias
-        excepturi dicta eveniet, officia neque minima voluptatibus dolores ipsa,
-        cupiditate illum.
-      </p>
-      <p>
-        Accusantium, temporibus fugit! Veritatis veniam dicta ipsa laudantium
-        sint, sequi tenetur porro, ad beatae commodi quae fugit, magni eligendi
-        dolores repellat fugiat aspernatur suscipit numquam rem. Ducimus minima
-        eligendi reiciendis.
-      </p>
-      <p>
-        Totam dolorem, facere optio ipsam sunt qui at necessitatibus eligendi
-        ipsum mollitia quae nesciunt dolorum molestiae consectetur atque aliquid
-        deleniti quibusdam? Id, corporis quis. Sunt, ipsa error? Accusantium,
-        distinctio obcaecati.
-      </p>
-    </div>
-  </body>
 </html>

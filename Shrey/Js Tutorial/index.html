@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="showDate"></p>
+
+  <button type="button" onclick="document.getElementById('showDate').innerHTML = Date()">Click me end show date
+    time</button>
+
+  <hr>
+
+  <div id="hideValue"></div>
+
+  <button type="button" onclick="document.getElementById('hideElement').style.display = 'none'">Click end hide</button>
+  <h2 id="hideElement">Click the button end hide this value</h2>
+
+  <script>
+    document.getElementById("hideValue").innerHTML = "<h1>Hello World</h1>"
+    document.getElementById('hideValue').style.color = "red"
+    document.getElementById('hideValue').style.backgroundColor = "blue"
+
+    /* 
+      type's of variable :- var , const , let
+      before Es6 js version = not use var
+
+      const :- constant value (not change before declare value)
+      let :- retrial value (value declared before update value)
+    */
+
+    let demo = "badshsh"
+    console.log(demo)
+
+    demo = "Magan"
+    console.log(demo);    
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      width: 70vw;
+      margin: auto;
+      border: 3px solid black;
+      border-radius: 6px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: lightgray;
+      border-spacing: 10px;
+    }
+
+    tr {
+      text-align: center;
+    }
+
+    tr:hover {
+      background-color: lightpink;
+    }
+
+    tr:nth-child(even):hover {
+      background-color: lightcoral;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5f5dc;
+    }
+
+    th {
+      padding: 20px 0;
+    }
+
+    td {
+      padding: 8px 0;
+    }
+
+    th,
+    td {
+      border: 2px solid black;
+      border-radius: 8px;
+    }
+
+    .tHeading {
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <table>
+    <colgroup>
+      <col span="1" style="background-color:burlywood;">
+      <col span="3" style="background-color:tomato;">
+    </colgroup>
+    
+    <tr class="tHeading">
+      <th style="width: 40px;">No.</th>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Chagan</td>
+      <td>00001 10000</td>
+      <td>chaganBlogar@gmail.com</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Magan</td>
+      <td>99085 59112</td>
+      <td>MaganChaptri@gmail.com</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Khajur</td>
+      <td>87922 77342</td>
+      <td>KhajurLive@gmail.com</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Chagan</td>
+      <td>00001 10000</td>
+      <td>chaganBlogar@gmail.com</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Magan</td>
+      <td>99085 59112</td>
+      <td>MaganChaptri@gmail.com</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Khajur</td>
+      <td>87922 77342</td>
+      <td>KhajurLive@gmail.com</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>Chagan</td>
+      <td>Magan</td>
+      <td>Khajur</td>
+      <td>Chaptri</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>Chagan@gmail.com</td>
+      <td>Magan@gmail.com</td>
+      <td>Khajur@gmail.com</td>
+      <td>Chapri@gmail.com</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th colspan="2">Full Name</th>
+      <th>Id</th>
+    </tr>
+    <tr>
+      <td>Chagan</td>
+      <td>Bloger</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Magan</td>
+      <td>Bloger</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>Chapri</td>
+      <td>ChatriWala</td>
+      <td>44</td>
+    </tr>
+  </table>
+</body>
+
+</html>

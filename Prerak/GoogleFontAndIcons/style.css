@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+.section-1 {
+  font-family: 'Fasthand', cursive;
+}
+
+.section-1>h1 {
+  font-family: 'Caprasimo', cursive;
+}
+
+.section-2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.icons>h2>i {
+  color: red;
+}

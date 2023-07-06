@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML JavaScript</title>
+  <style>
+    div {
+      padding: 20px;
+      border: 4px solid;
+      margin: 50px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <!-- Method one -->
+    <button type="button" onclick="document.getElementById('showDate').innerHTML = Date() ">Click end show time
+      date</button>
+    <p id="showDate"></p>
+
+    <hr>
+
+    <!-- Method two -->
+    <button type="button" onclick="myFunction()">Click end show time date</button>
+    <p id="showDateMethodTwo"></p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("showDateMethodTwo").innerHTML = Date();
+      }
+    </script>
+  </div>
+
+  <div>
+    <p id="valueNone"></p>
+
+    <script>
+      document.getElementById("valueNone").innerHTML = "Hello World";
+      document.getElementById("valueNone").style.color = "red";
+      document.getElementById("valueNone").style.backgroundColor = "black"
+      document.getElementById("valueNone").style.padding = "20px"
+    </script>
+  </div>
+
+  <div>
+    <img src="./pic_bulboff.gif" alt="Light on off" id="light">
+    <button type="button" onclick="bulbSwitch(0)">On</button>
+    <button type="button" onclick="bulbSwitch(1)">Off</button>
+
+    <script>
+      function bulbSwitch(e) {
+        let pic;
+        if (e == 0) {
+          pic = "./pic_bulbon.gif"
+        } else {
+          pic = "./pic_bulboff.gif"
+        }
+
+        document.getElementById("light").src = pic  
+      }
+    </script>
+  </div>
+
+</body>
+
+</html>

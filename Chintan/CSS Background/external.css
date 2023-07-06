@@ -1,0 +1,18 @@
+.bgColor {
+  background-color: lightblue;
+}
+
+.bgImg {
+  background: url("./pexels-lanyjade-mondou-17110380.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: red;
+}
+
+.bgScroll {
+  background: url("./pexels-josh-hild-11351742.jpg") no-repeat fixed;
+  height: 100vh;
+  background-size: contain;
+
+}
