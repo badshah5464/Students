@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-position: inside;
+}
+
+hr {
+  border: 3px solid;
+  margin: 30px 0;
+}
+
+.style-1 {
+  text-decoration: none;
+}
+
+.style-1:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+.style-2-Div {
+  margin: 30px 10px;
+}
+
+.style-2 {
+  color: black;
+  text-decoration: none;
+  background-color: #ddd;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 6px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 6px rgba(128, 128, 128, 0.5);
+}
+
+.style-2:hover {
+  box-shadow: 1px 1px 6px rgba(128, 128, 128, 0.9);
+}

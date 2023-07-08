@@ -1,0 +1,47 @@
+.inlineStyle>div>div>p {
+  display: inline;
+}
+
+.inlineStyle>div {
+  display: inline;
+}
+
+/* ******************** */
+
+.inlineBlockStyle>span {
+  display: block;
+}
+
+/* ******************** */
+
+.noneStyle {
+  position: relative;
+  width: fit-content;
+}
+
+.show {
+  position: absolute;
+  display: none;
+}
+
+.noneStyle:hover .show {
+  display: block;
+}
+
+i {
+  font-size: 35px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.hiddenStyle {
+  background-color: red;
+  width: fit-content;
+}
+
+/* ******************** */
+
+.hiddenStyle>img {
+  visibility: hidden;
+  /* display: none; */
+}
