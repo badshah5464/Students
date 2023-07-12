@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+}
+
+hr {
+  border: 2px solid black;
+  margin: 30px 0;
+}
+
+/* ***************** */
+
+.bgImgText {
+  background-image: url('./BgText.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;  
+  height: 80vh;
+}
+
+/* ***************** */
+
+.animatedImage {
+  background-image: url('./bgSet.jpg');
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* ****************** */
+
+.scrollContent {
+  margin: auto;
+  width: 30vw;  
+  height: 40vh;
+  background-attachment: fixed;
+  background-position: left;
+  overflow-y: auto;
+}

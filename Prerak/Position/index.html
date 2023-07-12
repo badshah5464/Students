@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    hr {
+      border: 2px solid;
+      margin: 30px 0;
+    }
+    
+    .hippo {
+      background-color: bisque;
+      font-size: 80px;
+      padding: 10px;
+      border: 2px solid green;
+    }
+
+    /* ********* */
+    
+    section.positionRelative {
+      background-color: green;
+      height: 500px;
+      width: 500px;
+      position: relative;
+    }
+
+    div.positionAbsolute {
+      background-color: red;
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    /* ********* */
+
+    .positionFixed {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    /* ********* */
+
+    .positionSticky {
+      position: sticky;
+      top: 10px;
+    }
+
+    /* ********* */
+  </style>
+
+  <script src="https://kit.fontawesome.com/010f924f62.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- *********************Relative Absolute***************************** -->
+
+  <section class="positionRelative">
+    <div class="positionAbsolute"></div>
+  </section>
+
+  <!-- *********************---------------***************************** -->
+  <hr>
+
+  <!-- *******************Position Fixed******************************* -->
+
+  <div class="positionFixed">
+    <i class="fa-solid fa-hippo hippo"></i>
+  </div>
+
+  <!-- ******************----------------******************************** -->
+
+  <div style="height: 50vh;"></div>
+
+  <!-- *****************position sticky********************************* -->
+
+  <div class="positionSticky">
+    <i class="fa-solid fa-hippo hippo"></i>
+  </div>
+
+  <!-- ****************---------------------********************************** -->
+
+  <div style="height: 500vh;"></div>
+</body>
+
+</html>

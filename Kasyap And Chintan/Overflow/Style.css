@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+
+}
+
+section {
+  background-color: aquamarine;
+  width: 90%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+aside {
+  height: 100vh;
+  background-color: red;
+  width: 10%;
+  overflow-y: auto;
+}
